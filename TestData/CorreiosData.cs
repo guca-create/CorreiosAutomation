@@ -1,6 +1,5 @@
 namespace CorreiosAutomation.TestData
 {
-    /// <summary>
     /// Massa de dados do desafio, centralizada para facilitar manutenção
     /// (ex: se os Correios mudarem o endereço de referência do CEP de teste).
     /// </summary>
@@ -11,7 +10,6 @@ namespace CorreiosAutomation.TestData
         public const string EnderecoEsperado = "Rua Quinze de Novembro, São Paulo/SP";
         public const string CodigoRastreioInvalido = "SS987654321BR";
 
-        /// <summary>
         /// Texto de captcha usado nas tentativas de resolução durante o teste.
         /// Ver comentário em Drivers/CaptchaSolver.cs sobre a estratégia adotada.
         /// </summary>
