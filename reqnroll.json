@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.reqnroll.net/reqnroll-config-latest.json",
+  "bindingCulture": {
+    "name": "pt-BR"
+  },
+  "language": {
+    "feature": "pt-BR"
+  },
+  "trace": {
+    "traceSuccessfulSteps": true,
+    "traceTimings": true
+  }
+}
