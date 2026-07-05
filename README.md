@@ -35,9 +35,9 @@ sem alterar a lógica de retentativa.
 
 | Tipo   | Onde | Status |
 |--------|------|--------|
-| **Id**    | `HomePage._campoEndereco` (`#endereco`), `_campoCaptcha` (`#captcha`), `_botaoBuscarCep` (`#btn_pesquisar`), `_imagemCaptcha` (`#captcha_image`), `ResultadoPage._tabelaResultado` (`#resultado-DNEC`), `_botaoNovaBusca` (`#btn_nbusca`) | ✅ Confirmado via DevTools |
-| **XPath** | `HomePage._mensagemCaptchaInvalido` (texto "Captcha Inválido!" dentro de `div.msg`) | ✅ Confirmado via DevTools |
-| **CSS**   | `ResultadoPage._colunaLogradouro` / `_colunaLocalidadeUf` (`td[data-th='...']`) | ✅ Confirmado via DevTools |
+| **Id**    | `HomePage._campoEndereco` (`#endereco`), `_campoCaptcha` (`#captcha`), `_botaoBuscarCep` (`#btn_pesquisar`), `_imagemCaptcha` (`#captcha_image`), `ResultadoPage._tabelaResultado` (`#resultado-DNEC`), `_botaoNovaBusca` (`#btn_nbusca`) |  Confirmado via DevTools |
+| **XPath** | `HomePage._mensagemCaptchaInvalido` (texto "Captcha Inválido!" dentro de `div.msg`) | Confirmado via DevTools |
+| **CSS**   | `ResultadoPage._colunaLogradouro` / `_colunaLocalidadeUf` (`td[data-th='...']`) | Confirmado via DevTools |
 
 ### 100% confirmado (inspeção real no DevTools)
 - `#endereco` — campo de busca de CEP/endereço
