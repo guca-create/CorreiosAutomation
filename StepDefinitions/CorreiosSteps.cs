@@ -22,10 +22,6 @@ namespace CorreiosAutomation.StepDefinitions
 
             _homePage = new HomePage(driver);
             _resultadoPage = new ResultadoPage(driver);
-            // Solver manual: pausa a execução e pede pra você digitar o texto
-            // do captcha olhando a janela do Chrome (não usa OCR/serviço externo,
-            // já que o desafio não cita nenhum). Para testes de unidade do
-            // próprio framework, troque por TestDataCaptchaSolver.
             _captchaSolver = new ManualConsoleCaptchaSolver();
         }
 
@@ -57,10 +53,6 @@ namespace CorreiosAutomation.StepDefinitions
         public void EntaoOResultadoDeveConterOEndereco(string enderecoEsperado)
         {
             var enderecoObtido = _resultadoPage.ObterEnderecoResultado();
-
-            // Comparamos por partes (logradouro / localidade-UF) em vez de string exata,
-            // pois o site pode retornar complementos no logradouro
-            // (ex: "Rua Quinze de Novembro - lado ímpar" em vez de só "Rua Quinze de Novembro").
             foreach (var parte in enderecoEsperado.Split(',', StringSplitOptions.TrimEntries))
             {
                 enderecoObtido.Should().Contain(parte, $"o endereço obtido deveria conter '{parte}'");
